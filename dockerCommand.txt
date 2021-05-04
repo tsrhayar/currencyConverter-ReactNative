@@ -1,0 +1,12 @@
+docker build -t ps-container:dev .
+docker image ls
+docker run -p 8081:80 -it ps-container:dev
+
+---------------->.dockerignore
+node_modules
+npm-debug.log
+build
+.dockerignore
+**/.git
+**/.DS_Store
+**/node_modules
